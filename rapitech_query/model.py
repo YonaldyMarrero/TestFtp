@@ -28,7 +28,7 @@ class ResConfigSettings(models.TransientModel):
         with pysftp.Connection(host="129.151.115.116",port=14422, username="jdodoo",
             private_key="/home/odoo/src/user/rapitech_query/lryodoo.pem") as sftp:
             with sftp.cd('/home/jdodoo/oddo'):             # temporarily chdir to public
-                sftp.put('/home/odoo/src/user/rapitech_query/rapitech_query/hola1.txt')  # upload file to public/ on remote
+                sftp.put('/home/odoo/src/user/rapitech_query/hola1.txt')  # upload file to public/ on remote
                 #sftp.get('/home/jdodoo/oddo/hola.txt')         # get a remote file
 
  
